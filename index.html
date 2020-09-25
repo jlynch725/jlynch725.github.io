@@ -1,154 +1,158 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet"  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style_portfolio.css">
-    <link rel="stylesheet" href="./css/animations_portfolio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Web-Dev Portfolio</title>
-  </head>
-  <body>
-    <div class="wrap">
-      <div class="menu-container">
-          <ul class="menu">
-              <a href="#home"><li>HOME</li></a>
-              <a href="#projects"><li>MY WORK</li></a>
-              <a href="#about"><li>ABOUT ME</li></a>
-              <a href="#contact"><li>CONTACT</li></a>
-          </ul>
-      </div>
-    </div>
-  <div>
-    <!----HOME---->
-    <div id="home">
-      <div class="container">
-          <div class="text-center">
-              <span class="head-main">Joe Lynch Web-Developer</span>
-          </div>
-      </div>
-  </div>
-  <!---My Work-->
-  <div id="projects">
-    <div class="container">
-      <h1>My Work</h1>
-        <div class="row">
-          <div class="column">
-            <div class="card">
-                <img src="./language_logos.png" alt="John" style="width:100%">
-                <h2>Languages</h2>
-                <p>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </p>
-                
-              </div>
-              <br>
+<!-- Head -->
+	<head>
+		<meta charset="UTF-8">
+		<title>Joe Lynch </title>
+		  <link rel="stylesheet" type="text/css" href="./CSS/final_Portfolio.css">
+	</head>
+		  
 
+<!-- Body -->
+<body class="Background"> 
 
-            </br>
-        <div>
-          <div class="flex-container">
-            <!-----Photo-container 1------>
-            <div class="photo-container">
-                <div class="photo">
-                    <img src="./mtn_guide_photo.PNG" alt="Mountain guide photo">
-                    <div class="photo-overlay">
-                        <p>One-page website made with HTML/CSS that details different ski resorts in America.</p>
-                    </div>
-                </div>
-            </div>
-            <!---End Photo-container 1----->
-            <div class="photo-container">
-              <div class="photo">
-                  <img src="./Academy_cinema_photo.png" alt="Academy Cinemas">
-                  <div class="photo-overlay">
-                      <p>One-page website made with HTML/CSS and Bootstrap displaying movie times</p>
-                  </div>
-              </div>
-            </div>
-          </div>
+<!-- Navbar -->
+	<div class="Navbar">
+		<a class="active" href="#Home">Home</a> 
+		<a href="#Slideshow">Slideshow</a> <!-- This is a new section -->
+		<a href="#About">About</a>
+		<a href="#GitHub">GitHub</a>
+		<a onclick="openForm()" ondblclick="closeForm()">Contact</a> <!-- This makes it so that our openForm function runs when we click Contact on the nav bar -->
+	</div>
+
+<!-- Home -->
+	<div id="Home">
+		<br> <!-- Breaks inserted to add space between navbar and first heading -->
+		<br>
+		
+<!-- Video -->
+		<video autoplay muted loop id="typing_vid.mp4"> <!-- Makes the video play automatically, on a loop and with no sound -->
+			<source src="./Person Typing Fast.mp4" type="video/mp4">
+			Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+		</video>
+	</div>
+
+<!-- Video text --> 
+	<div class="Video_Text"> 
+		<h1 style="color:white;">Joe Lynch Web-Developer</h1>
+			<p> 
+			  <strong>
+					<center>
+						
+						My name is Joe Lynch. Welcome to my portfolio website. <br>
+						On it, I will tell you about my background and experience.<br>
+						<br>Thank you for stopping by and enjoy! 
+					</center>	
+			  </strong>				
+			</p> 
+	</div>
+
+<!-- Slideshow section -->
+  <div id="Slideshow">
+    <div id="Slideshow_Background"> 
+      <div id="Slideshow_Container">
+        
+		<div class="mySlides fade">
+          <div class="Slide_Number">1 / 3</div>
+            <img class="Slide_Show_Images" src="./images/JL_photo.jpg" style="width:100%">
+              <div class="text">I'm available to assist you on your project!</div>
         </div>
+        
+		<div class="mySlides fade">
+          <div class="Slide_Number">2 / 3</div>
+            <img class="Slide_Show_Images" src="./images/language_logos.png" style="width:100%">
+              <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+        </div>
+
+
+		<div class="mySlides fade">
+		  <div class="Slide_Number">3 / 3</div>
+			<img class="Slide_Show_Images" src="./images/slide_2.jpg" style="width:100%">
+			  <div class="text"> 
+				<a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+			  </div>
+	    </div>
+	
+		  <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+		
+	  </div>
+  <br>
+
+      <div style="text-align:center">
+ 
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+		<span class="dot" onclick="currentSlide(4)"></span> 
+		<span class="dot" onclick="currentSlide(5)"></span> 
+		<span class="dot" onclick="currentSlide(6)"></span> 
+
       </div>
-    </div>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-        <!---About me---->
-        <div id="about">
-        <h1>ABOUT ME</h1>
-        <br></br>
-            <div class="photo-container_2">
-            <div class="photo_2">
-            <img src="./JL_photo.jpg" alt="Me" class="center" class="photo">
-           </div>
-            </div>
-            <br></br>
-            <br></br>
-           <div class="text-container">
-             <p>After two years in the tech industry on the client-facing side, I am excited to start my career as a software developer. 
-                I have a unique understanding of the problems and functionality issues that arrise with many web-based apps or products, 
-                and I can't wait to actually be on the front lines improving them. Origionaly from Boston, I moved to Salt Lake City after 
-                graduating from college in Virginia. 
-             </p>
-            </div>
-        </div>
-        <br></br>
-        <br></br>
-        <br></br>
-            <!---Rsvp-->
-        <section id="contact">
-          <div class="container">
-            <div class="heading-padding">
-              <h1 class="heading-padding">CONTACT</h1>
-              <div class="reservation">
-                <h2><span>Contact me with any business inquiries</span>
-                </h2>
-                <div class="form-rsvp">
-                  <form action=""method="post">
-                    <input class="rsvp" type="text" value="" placeholder="Full Name">
-                    <input class="rsvp" type="text" value="" placeholder="Email Address">
-                    <input class="rsvp" type="text" value="" placeholder="Message">
-                    <div class="submit">
-                      <input type="submit" value="Submit">
-                    </div>
-                  </form>
-                </div>
-            </div>
-          </div>
-        </div>
-    </
-            </section>
-            <!---end rsvp-->
-
-           <!-- Add icon library -->
-
-                <!-- Add font awesome icons -->
-                <a href= url(https://www.facebook.com/joseph.lynch.980?ref=bookmarks) class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-          
-
-
-
-
-
     </div>
   </div>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+
+<!-- About section -->
+  <div class="Row" id="About"> 
+	<div class="Column_2"> <!-- Left column -->
+	  <img src="./images/typingpic.jpg" alt="Laptop">
+	</div>
+  
+	<div class="Column_1"> <!-- Right column -->
+	  <h1>About</h2>
+	    <p>After two years in the tech industry on the client-facing side, I am excited to start my career as a software developer. 
+            I have a unique understanding of the problems and functionality issues that arrise with many web-based apps or products, 
+            and I can't wait to actually be on the front lines improving them. Origionaly from Boston, I moved to Salt Lake City after 
+            graduating from college in Virginia.  <br><br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. <br><br> <a href="#Contact">Contact</a> me below!</p>
+	</div>
+  </div>
+
+<!-- GitHub section -->
+	<div class="Row" id="GitHub">
+		<div class="Column_1"> <!-- Left column -->
+			<h1>GitHub</h1>
+				<p>You can view my coding projects on my GitHub profile here:<br>
+				<center><a href="https://github.com/the-tech-academy" target="_blank">The Tech Academy GitHub</a></center></p>
+		</div>
+		
+		<div class="Column_2"> <!-- Right column -->
+			<a href="https://github.com/the-tech-academy" target="_blank"><img src="./images/github.png" alt="GitHub"></a>
+		</div>
+	</div>
+</div>
+
+<!-- Contact section -->
+  <div id="Contact"> 
+    <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+	  <div class="form-popup" id="myForm">
+	    <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+		<h1>Contact</h1>
+			<label for="name"><b>Name</b></label>
+			  <input type="text" placeholder="Type your name here" name="name" required>
+			<label for="phone"><b>Phone</b></label>
+			  <input type="text" placeholder="Enter your phone number here" name="phone">
+			<label for="email"><b>Email</b></label>		
+			  <input type="text" placeholder="Type your email address here" name="email" required>
+			<label for="message"><b>Message</b></label>
+			  <input type="text" placeholder="Type your message here" name="message">
+ 
+    <button type="submit" class="btn">SUBMIT</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+	    </form>
+	  </div>
+  </div>
+	
+<!-- Footer section -->	
+	<footer>
+	  <p>
+	    <center>&copy Joseph Lynch | 2020 </center><br>
+      </p>
+	</footer>
+
+	<script src="./JS/final_Portfolio.js"></script>
+	
+</body>
 </html>
