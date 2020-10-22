@@ -443,7 +443,6 @@ button:hover, .form-container .btn:hover{
 footer {
 	padding: 2%;
   background-color:white;
-  text-decoration: none;
 }
 
 .fas fa-file-pdf {
@@ -459,3 +458,9 @@ footer {
   width: 5px;
 
 }
+
+#center {
+  text-decoration: none;
+
+}
+
